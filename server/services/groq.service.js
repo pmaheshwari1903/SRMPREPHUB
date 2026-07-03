@@ -25,8 +25,8 @@ export const askAi = async (messages) => {
 
     return content
     } catch (error) {
-            console.error("OpenRouter Error:", error.response?.data || error.message);
-    throw new Error("OpenRouter API Error");
+        console.error("Groq Error:", error.response?.data || error.message);
+    throw new Error("Groq API Error");
 
     }
 }
